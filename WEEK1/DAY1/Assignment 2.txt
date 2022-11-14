@@ -1,0 +1,17 @@
+1. How to display images in title bar?
+   The majority of websites add on icon or image logo in the title bar.The icon logo is also called a favicon.
+   Method1:
+   Step-1:Download the image and save your .ico file on the computer
+   Step-2:Rename the file to favicon.ico, because the browser automatically recognizes only this name.
+   Step-3:Upload the file to the host directory, where your website files are located.
+   Step-4:When your favicon.ico file is uploaded, the browser will select it automatically and display the image in the browser.
+
+   Method2:
+   Just use the rel attribute of link tag and change value to stylesheet to icon.
+   
+
+2. What is the purpose of "alt" attribute of img tag?
+   The required "alt" attribute specifies an alternate text for an image, if the image cannot be displayed.
+   The "alt" attribute provides alternative information for an image if a user for some reason cannot view it.
+   It contains single value text which specifies the alternative text for an image.
+   
