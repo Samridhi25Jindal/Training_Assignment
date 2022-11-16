@@ -1,0 +1,45 @@
+1. What is Validation in Client Side Programming?  
+Client-side validation is an initial check and an important feature of good user experience;by catching invalid data on the client-side, the user can fix it straight away. If it gets to the server and is then rejected, a noticeable delay is caused by a round trip to the server and then back to the client-side to tell the user to fix their data. When a user use the interface of the product, some validation must be there to prevent incorrect or invalid data input by a user when entering data in a form.
+
+2. What are the advantages of performing Validations?
+a) Compatibility
+If you are running an un-validated website you cannot be certain that your website's design is rendering correctly (or 
+uniformly) in different browsers. For example, Internet Explorer is more forgiving than many other browsers and may ignore 
+unclosed tags etc that could otherwise cause a page to display incorrectly. Web site validation techniques help ensure your 
+code is correct and will work on as many browers as possible - this is what makes a good website.
+b) SEO
+By validating you are making your code behind the website as clean and uncluttered as possible. Cleaner code is easier for 
+search engines to 'read through' and will increase the chances of being read the whole way. This will, in turn, allow them to 
+extract more information about your website, understand your services better and perhaps see your website as being more 
+authoritive than others. The more authorative websites command higher search engine positions.
+c) Accessibility
+Validating your website means you are being made to use many techniques that aid the accessibility (catering for users with 
+a disability) of your site. As a very basic example, a validated website will not allow an image without an ALT attribute 
+and ALT attributes are important for use with screen readers (which a user with a visionary impairment may use to 'read out' 
+a website to them). A validated website does not instantly mean your website is 100% accessible but it is a very good place 
+to start and build upon.
+
+3. What is querystring in webpages?
+Query String is a group of keywords that send request to the web server. These requests are used to pass information (parameters) from one page to another and you can access those information in receiving page. It containing in the HTTP requests for a specific URL.
+
+4. What is <input type="hidden"/>  ? Why do we use?
+The <input type="hidden"> defines a hidden input field. A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted. A hidden field often stores what database record that needs to be updated when the form is submitted.This input type is used when you want to pass data along with a form but don't want or don't need the user to interact with it or even see it.Basically hidden fields will be more useful and advantages to use with multi step form.We can use hidden fields to pass one step information to next step using hidden and keep it forwarding till the end step.
+
+5.Difference between <input type="submit" /> and <button></button>?
+HTML <button> tag
+It is used for creating a button within an HTML form and inside the <button> tag, you can place content like text or images.
+
+HTML <input type=”button” />
+The <input type="submit"> defines a button for submitting the form data to a form-handler.The form-handler is typically a file on the server with a script 
+for processing input data.The form-handler is specified in the form's action attribute.Submit button automatically submits a form on click. Using HTML forms,we can easily take user input. The <form> tag is used to get user input, by adding the form elements. The type attribute is used to add a button inside the <input> tag.
+
+
+
+
+
+
+
+
+
+
+

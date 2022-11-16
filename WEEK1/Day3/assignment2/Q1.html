@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 12px;
+        }
+        fieldset {
+            width: 35%;
+        }
+        div {
+            background-color: rgb(35, 162, 204);
+            color: white;
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+        span {
+            font-size: 7px;
+        }
+        label {
+               color: rgb(35, 162, 204);
+        }
+        .charge {
+               color: rgb(35, 162, 204);
+               background-color: rgb(199, 195, 195);
+               text-align: center;
+               padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset><br/>
+    <div>
+    <span><img src="https://th.bing.com/th/id/R.28d8aab7289bcfb8245a9ba7cd6c4a1d?rik=4LjmO6shfSdu7g&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_328559.png&ehk=c7QRA2KVZtR%2bw70mOLcnB33bAm9HW0fSCqr5gEMvtp4%3d&risl=&pid=ImgRaw&r=0" height="15px" width="10px"/> This is a secure 128-bit SSL Encrypted payment.You're safe</span><br/>
+    </div>
+    <form>
+    <input type="radio" id="r1" name="r1" value="Credit Card(Visa,Mastercard)"/>
+    <label>Credit Card(Visa,Mastercard)</label>
+    <img src="https://th.bing.com/th/id/R.32be215fba9b3709b12258c14cc866a2?rik=7VYMPS6IkOuIIQ&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fdesignbolts%2fcredit-card-payment%2f256%2fVisa-icon.png&ehk=ywouZJUu%2fOLcMMQJGT5bPkxHB1CE661MSmLdZ5lO8so%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" height="15px" width="20px"/>
+    <img src="https://cdn.imgbin.com/23/6/10/imgbin-logo-mastercard-computer-icons-graphics-credit-card-mastercard-iNDMuJ7Xxd1dAXaw2TwxVerpJ.jpg" height="15px" width="20px"/>
+    <input type="radio" id="r2" name="r1" value="PayPal"/>    
+    <label>PayPal</label>
+    <img src="https://th.bing.com/th/id/R.7b5991160f09eef5fece176611431cb7?rik=I8GQBNVBh6vYSg&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2ficonshock%2fcredit-card%2f512%2fpaypal-icon.png&ehk=TIYfg43dYTkMytkTdzFTkGgFGJmqB%2bWKQG7axLrgnxE%3d&risl=&pid=ImgRaw&r=0" width="20px" height="20px"/>
+    <br/><br/>
+    <label>Card Number <span>The 16 digits on front of your card</span></label><br>
+    <textarea name="ta1" cols="60" rows="1">
+        </textarea>
+    <br/><br/>
+    <label>Expiration date</label>
+    <label style="margin: 120px;">CVV2/CVC2</label><br/>
+    <select id="s1" name="s1">
+        <option>Month</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+    <label>/</label>
+    <select id="s2" name="s2">
+        <option>Year</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+        <option>2025</option>
+        <option>2026</option>
+        <option>2027</option>
+        <option>2028</option>
+        <option>2029</option>
+        <option>2030</option>
+        <option>2031</option>
+        <option>2032</option>
+    </select>
+    <input style="margin-left: 40px;" type="password" id="p1" name="p1"/>
+    <br/><br/>
+
+    <label>Full Name on a Card</label><br/>
+    <textarea name="ta2" cols="60" rows="1">
+    </textarea>
+    <br/><br/>
+    </form>
+    <p class="charge">You will be charged $29.00 every month</p>
+    <p style="text-align: center;"><input style="background-color:orange; color:white; border:orange; padding:5px 10px; font-weight:bold;" type= "submit" value="Complete Transaction"/></p>
+    </fieldset>
+
+</body>
+</html>
