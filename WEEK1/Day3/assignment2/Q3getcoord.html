@@ -1,0 +1,26 @@
+<html>
+<body>
+
+<h2>Getting Coordinates using JavaScript</h2>
+<hr/>
+
+<p>Click on the jQuery, Angular JS, or Bootstrap to go to a new page and read more about the topic:</p>
+
+<img   onmousemove="getCoords(event)"
+			src="ImageMap.png" 
+			alt="Workplace"
+			usemap="#workmap" 
+			width="400" height="379"  />
+			
+<h1 id="x"></h1>
+
+ <script>
+	function   getCoords(e)
+	{
+		var obj = document.getElementById("x");
+		obj.innerText  = "X = " + e.clientX + ",  Y = " + e.clientY;
+	}	
+ </script>
+
+</body>
+</html>
