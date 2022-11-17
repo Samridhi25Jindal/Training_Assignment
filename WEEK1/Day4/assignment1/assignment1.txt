@@ -1,0 +1,21 @@
+1. What is differences between <head> and  <header> tags?
+The HTML <head> tag is a container for metadata and links to scripts and stylesheets. The <header> tag is a semantic container used to designate contents that is introductory or navigational in nature.The HTML <header> element represents a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, wrapped section's header, a search form, and so on.
+
+2. How to allow only numbers in textbox?
+The standard solution to restrict a user to enter only numeric values is to use <input> elements of type number. It has built-in validation to reject non-numerical values. 
+
+3. HTML
+
+4.What is cookies in web applications? Why do we use?
+Cookies are small files which are stored on a user’s computer. They are used to hold a modest amount of data specific to a particular client and website and can be accessed either by the web server or by the client computer.Cookies are data packets that are exchanged between computer programs. In general, HTTP cookies are used by websites to store user data locally and on the server side in order to make individual functions and web applications such as online 
+shops, social networks, and forums more user-friendly.
+
+Cookies allow a website to link your requests together, allowing it to recognise that the same person signed in, added an item to the shopping cart, browsed products, and then returned to the basket. Without cookies, the website would simply see four individual requests; but, if cookies are used, the website can see that the same person made all four requests and determine whose user account it belongs to. You probably won't be able to log into websites or utilise many other common functions if you don't have cookies enabled.
+
+a. If you search for something on the internet, and allow their cookies then for the next few months you will see similar 
+adverts on websites, this is mainly happening because of cookies.
+b. A cookie can remember your log-in details (not your password) and help you to log in the next time you visit the site.
+c. Cookies will remember your preferences, language, font size theme etc. They will even remember what you have put into your 
+shopping basket, so can be very handy.
+d. For the website owner cookies help them understand how many visits the website has had, any unique visitors, devices used, 
+pages seen, and how long you spent on a page and your location.
