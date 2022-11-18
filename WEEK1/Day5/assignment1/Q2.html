@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> HTML5 Graphics - Canvas</h2>
+    <hr/>
+    <input type="button" onclick="fn_drawGraphics()" value="Draw Graphics"/>
+    <br/><br/>
+    <canvas  id="c1"  width="300"  height="300"  style="border:2px solid blue;">
+    </canvas>
+    <script>
+        function  fn_drawGraphics()
+			{
+			var  obj =  document.getElementById("c1");
+			var  ctx   =  obj.getContext("2d");	
+
+			var ar = [250, 140, 40, 280, 120 , 100, 175]
+			var x = 10, w = 30;
+			for(var i = 0; i < 7; i++)
+			{
+				ctx.beginPath();
+				ctx.fillStyle = "Blue";
+				ctx.fillRect(x, 300-ar[i], w, ar[i]);	
+				x = x + 40;
+			}	
+        }
+    </script>
+</body>
+</html>
