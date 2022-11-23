@@ -1,0 +1,15 @@
+1.Find out the details about List attribute in html5 forms. How to use datalist tag? Prepare an example for list attribute and datalist tag?
+The <datalist> tag specifies a list of pre-defined options for an <input> element.
+The <datalist> tag is used to provide an "autocomplete" feature for <input> elements. Users will see a drop-down list of pre-defined options as they input data.
+The <datalist> element's id attribute must be equal to the <input> element's list attribute (this binds them together).
+Using this tag, we can define a list of data which then can be used as list for an input box. We can create a simple Autocomplete feature using this tag.
+
+
+2. What are  Web Crawlers and Backlinks in SEO?
+WEB CRAWLER: 
+A web crawler is an online bot that explores web pages on the internet to learn about them and their content, all in order to serve this information to online searchers when they pose a query on a respective search engine.The web crawler is a computer program or automated script that crawls through the World Wide Web in a predefined and methodical manner to collect data. The web crawler tool pulls together details about each page: titles, images, keywords, other linked pages, etc. It automatically maps the web to search documents, websites, RSS feeds, and email addresses. It then stores and indexes this data
+
+BACKLINKS:
+A backlink is a link created when one website links to another. Backlinks are also called "inbound links" or "incoming links." Backlinks are important to SEO.Backlinks are especially valuable for SEO because they represent a "vote of confidence" from one site to another.A backlink is a kind of Internet manipulator. It links one particular site with other external websites which contain links 
+to this site. In other words, when you visit external sites they will lead you to that particular site. Backlinks are used 
+for SEO purposes to optimize a website in a proper way.
