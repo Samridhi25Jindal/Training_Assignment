@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>QUES1</title>
+        <style>
+            fieldset {
+                margin:auto;
+                width: 40%;
+                background-color: pink;
+                border: 2px solid black;
+            }
+
+            #button1 , #button2 , #button3 {
+                background-color: greenyellow;
+            }
+            #button1:hover {
+                background-color: aquamarine;
+            }
+            #button2:hover {
+                background-color: aquamarine;
+            }
+            #button3:hover {
+                background-color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 style="text-align:center">CUSTOMER DATA IN LOCAL STORAGE</h2>
+        <hr/>
+        <fieldset>
+        <legend style="font-size:32px">Customer Data</legend>
+        Customer Name: <input type="text" id="uname" name="uname"/>
+        <br/><br/>
+        Joining Date: <input type="date" id="join" name="join"/>
+        <br/><br/>
+        Favourite Color: <input type="color" id="favcolor" name="favcolor"/>
+        <br/><br/>
+
+        <input type="button" id="button1" value="Save Customer Data" onclick="fn_saveData()"/>
+        <input type="button"  id="button2" value="Delete Customer Data" onclick="fn_deleteData()"/>
+        <br/><br/>
+        </fieldset>
+        <br/><br/>
+
+        <fieldset>
+            <input type="button" id="button3" value="Get Customer Data" onclick="fn_getData()"/>
+            <p id="p1"></p><br/><br/>
+        </fieldset>
+        <script>
+            function fn_saveData()
+            {
+                var txtuname = document.getElementById("uname");
+                var txtjoin = document.getElementById("join");
+                var txtfavcolor = document.getElementById("favcolor");
+
+                var dataObj = {};
+                dataObj.uname = txtuname.value;
+                dataObj.join = txtjoin.value;
+                dataObj.favcolor = txtfavcolor.value;
+
+                var resultStr = JSON.stringify(dataObj);
+
+                localStorage.setItem("customerData" , resultStr);
+
+                alert("Customer Data stored in localStorage");
+            }
+            function fn_deleteData()
+            {
+                localStorage.removeItem("customerData");
+                alert("Customer Data removed from localStorage");
+            }
+            function fn_getData()
+            {
+                var dataStr = localStorage.getItem("customerData");
+
+                if(dataStr == null)
+                {
+                    var paraObj = document.getElementById("p1");
+                    paraObj.innerHTML = "";
+
+                    alert("There is no data stored in localStorage")
+                    return;
+                }
+                var dataObj = JSON.parse(dataStr);
+
+                var paraObj = document.getElementById("p1");
+
+               paraObj.innerHTML = "Customer Name :"  + dataObj.uname +  "Customer's Joining Date :"  + dataObj.join + "Customer's Favourite Color:"  + dataObj.favcolor;
+            }
+        </script>
+
+    </body>
+</html>
