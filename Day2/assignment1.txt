@@ -1,0 +1,33 @@
+1.What is Clearfix class? Why do we use?
+Easily clear floats by adding .clearfix to the parent element. Can also be used as a mixin.
+Without the clearfix the wrapping div would not span around the buttons which would cause a 
+broken layout
+
+
+2. How to hide the elements using Bootstrap?
+Content which should be visually hidden, but remain accessible to assistive technologies such as screen readers, can be styled using the .visually-hidden class.
+
+
+3.What is spinner class? How to create spinners in bootstrap?
+Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning 
+you don’t need any JavaScript to create them.Their appearance, alignment, and sizing can be easily customized with the amazing utility classes.
+
+To create a spinner/loader, use the .spinner-border class.
+
+Use any text color utilites to add a color to the spinner.
+
+Use the .spinner-grow class if you want the spinner/loader to grow instead of "spin".
+
+Use .spinner-border-sm or .spinner-grow-sm to create a smaller spinner.
+
+For eg:-
+--------
+<div class="spinner-border text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+
+
+
+
+
+
