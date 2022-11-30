@@ -1,0 +1,36 @@
+.primary {
+  background-color: blue;
+  width: 500px;
+  height: 200px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: auto;
+}
+
+.secondary {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: auto;
+}
+
+.tertiary {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  margin: auto;
+}/*# sourceMappingURL=Q2.css.map */
