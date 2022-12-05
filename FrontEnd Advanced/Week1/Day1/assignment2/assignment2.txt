@@ -1,0 +1,32 @@
+1. Is it possible to disable JavaScript in browser?  If yes, How to disable javascript in browser?
+Yes, it is possible to disable JavaScript in browser.
+Please follow the steps below to disable JavaScript -
+
+a. Go to Settings by clicking on the menu icon located in the upper right corner.
+b. Under ‘Privacy and Security’ tab click on ‘Site Settings’
+c. Now under ‘Additional Permissions’ go to ‘Content’
+d. Now click on JavaScript
+e. Disable or enable the JavaScript by clicking on the button next to ‘Blocked’ option
+
+
+2. What is the difference between undefined and not defined in JavaScript?
+undefined: It is a JavaScript keyword that has a special meaning. Everything which gets a space in memory will contain undefined until we assign a value to that memory space.It works like when we declared a variable in the code but did not assign the value before printing the variable value.
+not defined: In JavaScript, it is one of the reference errors that JavaScript will throw when someone accesses the variable which is not inside the memory heap.It works like when we did not declare the variable and try to call that variable.
+
+
+3. Difference between ==  and ===?
+Double equals (==) is a comparison operator, which transforms the operands having the same type before comparison.
+So, when you compare string with a number, JavaScript converts any string to a number. An empty string is always converts to zero. A string with no numeric value is converts to NaN (Not a Number), which returns false.
+
+=== (Triple equals) is a strict equality comparison operator in JavaScript, which returns false for the values which are not of a similar type. This operator performs type casting for equality. If we compare 2 with “2” using ===, then it will return a false value.
+
+4. What does the isNaN() function?
+The JavaScript isNaN() Function is used to check whether a given value is an illegal number or not. It returns true if the 
+value is a NaN else returns false. It is different from the Number.isNaN() Method.
+
+5. Difference between Client side JavaScript and Server side JavaScript?
+Client side java script comprises the basic language and predefined objects which are relevant to running java script in a browser. The client side java script is embedded directly by in the HTML pages. This script is interpreted by the browser at run time.It is JavaScript that enables the enables web pages on browsers to run active online content.
+
+Server side java script also resembles like client side java script. It has relevant java script which is to run in a server. The server side java scripts are deployed only after compilation.It is JavaScript that enables back-end access to databases, file systems, and servers.
+
+
