@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations-Q4</title>
+    <style>
+        fieldset {
+            margin:auto;
+            width:50%;
+            border: 2px solid black;
+            background-color: rgb(186, 162, 186);
+            padding-left:10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center">Mathematical Operations</h1>
+    <hr/><br/>
+    <fieldset>
+        <br/>
+    First Number:
+    <input type="number" id="n1"/><br/><br/>
+    Second Number:
+    <input type="number" id="n2"/><br/><br/>
+    <input type="button" value="Add" onclick="fn_add()"/>
+    <input type="button" value="Subtract" onclick="fn_sub()"/>
+    <input type="button" value="Multiply" onclick="fn_mul()"/>
+    <p id="p1"></p>
+    </fieldset>
+
+    <script>
+        function fn_add()
+        {
+            var paraObj = document.getElementById("p1");
+            var num1 = document.getElementById("n1");
+            var num2 = document.getElementById("n2");
+
+            var number1 = num1.value;
+            var number2 = num2.value;
+
+            var no1 = JSON.parse(number1);
+            var no2 = JSON.parse(number2);
+
+            var add = no1 + no2;
+            paraObj.innerHTML = "Result : " + add;
+            paraObj.style.fontWeight = "bold";
+        }
+        function fn_sub()
+        {
+            var paraObj = document.getElementById("p1");
+            var num1 = document.getElementById("n1");
+            var num2 = document.getElementById("n2");
+
+            var number1 = num1.value;
+            var number2 = num2.value;
+
+            var subtract = number1 - number2;
+            paraObj.innerHTML = "Result : " + subtract;
+            paraObj.style.fontWeight = "bold";
+        }
+        function fn_mul()
+        {
+            var paraObj = document.getElementById("p1");
+            var num1 = document.getElementById("n1");
+            var num2 = document.getElementById("n2");
+
+            var number1 = num1.value;
+            var number2 = num2.value;
+
+            var multiply = number1 * number2;
+            paraObj.innerHTML = "Result : " + multiply;
+            paraObj.style.fontWeight = "bold";
+        }
+    </script>
+</body>
+</html>
