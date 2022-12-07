@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques5</title>
+    <style>
+        select {
+            font-size: 16px;
+            width:25%;
+            margin: auto;
+        }
+        option {
+            font-size: 16px;
+        }
+        li {
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Display Products</h1>
+    <hr/><br/>
+    <select id="s1" onchange="fn_updateproduct()">
+        <option>Laptops</option>
+        <option>Mobile Phones</option>
+        <option>Sound Systems</option>
+    </select><br/><br/>
+
+    <ol id="list"></ol>
+
+    <script>
+        var laptopArray = ["HP" , "Dell" , "Lenovo" , "Apple" , "Asus" , "Acer"];
+        var phonesArray = ["Oppo" , "Vivo" , "Samsung" , "Apple" , "Xiaomi" ];
+        var soundArray = ["Boat" , "JBL" , "Skullcandy" , "Sony" , "Apple"]
+
+        function fn_updateproduct()
+        {
+            
+            var result = document.getElementById("list");
+            result.innerHTML="";
+            var product = document.getElementById("s1");
+
+            if(s1.value == "Laptops")
+            {
+                for(var i=0;i<5;i++)
+                {
+                    result.innerHTML += "<li>" + laptopArray[i] + "</li>"
+                }
+            }
+            else if(s1.value == "Mobile Phones")
+            {
+                for(var i=0;i<phonesArray.length;i++)
+                {
+                    result.innerHTML += "<li>" + phonesArray[i] + "</li>"
+                }
+            }
+            else if(s1.value == "Sound Systems")
+            {
+                for(var i=0;i<soundArray.length;i++)
+                {
+                    result.innerHTML += "<li>" + soundArray[i] + "</li>"
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

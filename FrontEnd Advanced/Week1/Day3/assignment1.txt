@@ -1,0 +1,25 @@
+1. What is BOM?    Diff... between DOM and BOM?
+The Browser Object Model (BOM) is a browser-specific convention referring to all the objects exposed by the web browser. The BOM allows JavaScript to “interact with” the browser. The object of the window represents a browser window and all its corresponding features. A window object is created automatically by the browser itself. Java Script’s window.screen object contains information about the user’s screen. It can also be written without the window prefix.The BOM (Browser Object Model) consists of the objects navigator, history, screen, location and document which are children of window.
+
+DOM is a collection of functions and attributes / data that we use to create JavaScript programs that we can call APIs (Application Programming Interface). DOM can be used in HTML, XM and SVG. DOM is not only used for JavaScript programming but can be used for other programming as well. In the document node is the DOM (Document Object Model), the document object model, which represents the contents of the page. You can manipulate it using javascript.
+
+2. What is event target property in javascript?
+The target event property returns the element that triggered the event.
+The target property gets the element on which the event originally occurred, opposed to the currentTarget property, which always refers to the element whose event listener triggered the event. For example, if we call a function from an HTML element click event, we can determine the specified element name to trigger and call a function.To get that property, we call event.target and store it in a variable like let variable = event.target. Now, we can get multiple event.target properties with that variable. It returns a reference to the object on which the event occurred. With the help of the target property of the event, we can do the following tasks.
+a)We can get the element that triggers the event.
+b)We can get access to the element properties.
+c)We can easily modify some properties of the element.
+
+7. What is difference between  indexOf()  and findIndex()
+indexOf() function:
+The indexOf() method expects a value as a first parameter. 
+This function is used to find the index of the first occurrence of the element provided for search as the argument to the function.
+Syntax:
+arr.indexOf(element[, index])
+
+findIndex() function:
+The findIndex() method expects a callback as first parameter. This function returns index of the first element of the given array which satisfies the testing function.
+Syntax:
+array.findIndex(fun(curValue, index, arr), thisValue)
+
+

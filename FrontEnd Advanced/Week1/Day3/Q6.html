@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performing Validations-Ques6</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            margin: auto;
+            width:60%;
+        }
+        .error {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Performing Validations using JavaScript Forms</h1>
+    <hr/><br/>
+    <div class="container">
+    <form action="javascript:alert('Submitted Successfully')" id="form1" class="form1" method="get" onsubmit="fn_submitData()">
+    Customer Name: <input type="text" id="cname" name="cname" autofocus/>
+    <span class="error">*</span>
+    <span class="error" id="sp1"></span><br/><br/>
+
+    Source Station: <input type="text" id="sst" name="sst"/>
+    <span class="error">*</span>
+    <span class="error" id="sp2"></span><br/><br/>
+
+    Destination Station: <input type="text" id="dst" name="dst"/><br/><br/>
+
+    Contact Number: <input type="number" id="cno" name="cno"/>
+    <span class="error">*</span>
+    <span class="error" id="sp3"></span><br/><br/>
+
+    Email: <input type="email" id="email" name="email"/>
+    <span class="error">*</span>
+    <span class="error" id="sp4"></span><br/><br/>
+
+    <input type="Submit" value="Submit"/>
+    <input type="reset" value="Clear"/>
+    </form>
+
+    <script>
+       function fn_submitData()
+       {
+        var isFormValid = true;
+
+        var cnametxtObj = document.getElementById("cname");
+        var ssttxtObj = document.getElementById("sst");
+        var dsttxtObj = document.getElementById("dst");
+        var contxtObj = document.getElementById("cno");
+        var emailtxtObj = document.getElementById("email");
+
+        var cnameerror = document.getElementById("sp1");
+        var ssterror = document.getElementById("sp2");
+        var conerror = document.getElementById("sp3");
+        var mailerror = document.getElementById("sp4");
+
+
+        if (cnametxtObj.value == "")
+        {
+            cnameerror.innerHTML = "Customer Name is Required";
+             isFormValid = false;
+        }
+        if(ssttxtObj.value == dsttxtObj.value)
+        {
+            ssterror.innerHTML = "Source Station and Destination Station cannot be same";
+            isFormValid = false;
+        }
+        if(contxtObj.value.length != "10")
+        {
+            conerror.innerHTML = "Contact Number should be of 10-digits";
+            isFormValid = false;
+        }
+        if(emailtxtObj.value == "")
+        {
+            mailerror.innerHTML = "Email field is required";
+            isFormValidd = false;
+        }
+        if(isFormValid == false)
+        {
+            event.preventDefault();
+        }
+       }
+    </script>
+    </div>
+</body>
+</html>
