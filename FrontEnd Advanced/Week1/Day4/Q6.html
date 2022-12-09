@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<head>
+		<title>Ques6-Arrays</title>
+	</head>
+	<body>
+		<h3>JavaScript Programming -- Array Of Objects  </h3>
+		<hr/>
+		<input type="button"   value="Get Data"   onclick="fn1_getData1()"  />
+	 
+		<br/><br/>
+		<table  id="table1"  border="2"  width="500"  cellpadding="10" cellspacing="0">
+			<tr>
+					<th>Customer Name</th>
+					<th>City</th>
+					<th>Country</th>
+			</tr>
+		</table>
+		
+		<input type="button"   value="Get Data"   onclick="fn2_getData2()"  />
+	 
+		<br/><br/>
+		<table  id="table2"  border="2"  width="500"  cellpadding="10" cellspacing="0">
+			<tr>
+					<th>Customer ID</th>
+					<th>Customer Email-ID</th>
+					<th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Image</th>
+			</tr>
+		</table>
+		<script>	
+			var  arr1 = [{"Name":"Alfreds Futterkiste","City":"Berlin","Country":"Germany"}, {"Name":"Ana Trujillo Emparedados y helados","City":"México D.F.","Country":"Mexico"}, {"Name":"Antonio Moreno Taquería","City":"México D.F.","Country":"Mexico"}, {"Name":"Around the Horn","City":"London","Country":"UK"}, {"Name":"B's Beverages","City":"London","Country":"UK"}, {"Name":"Berglunds snabbköp","City":"Luleå","Country":"Sweden"}, {"Name":"Blauer See Delikatessen","City":"Mannheim","Country":"Germany"}, {"Name":"Blondel père et fils","City":"Strasbourg","Country":"France"}, {"Name":"Bólido Comidas preparadas","City":"Madrid","Country":"Spain"}, {"Name":"Bon app'","City":"Marseille","Country":"France"}, {"Name":"Bottom-Dollar Marketse","City":"Tsawassen","Country":"Canada"}, {"Name":"Cactus Comidas para llevar","City":"Buenos Aires","Country":"Argentina"}, {"Name":"Centro comercial Moctezuma","City":"México D.F.","Country":"Mexico"}, {"Name":"Chop-suey Chinese","City":"Bern","Country":"Switzerland"}, {"Name":"Comércio Mineiro","City":"São Paulo","Country":"Brazil"}];
+			  function fn1_getData1()
+			  {	 	
+						var  stri  = "<tr> <th> Customer Name </th> <th>City</th> <th>Country</th></tr>";
+						
+						for( var i of arr1)
+						{ 
+							stri  +=  "<tr>";	
+							stri  +=  "<td>" +   i.Name + "</td>";	
+							stri  +=  "<td>" +   i.City + "</td>";	
+							stri  +=  "<td>" +   i.Country + "</td>";	
+							stri  +=  "</tr>";	
+						}
+						
+						var  tableObj1=  document.getElementById("table1");	 
+						tableObj1.innerHTML = "";	
+						tableObj1.innerHTML += stri;
+			  }		  
+		    var arr2 =[{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://reqres.in/img/faces/1-image.jpg"},{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://reqres.in/img/faces/3-image.jpg"},{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://reqres.in/img/faces/4-image.jpg"},{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://reqres.in/img/faces/5-image.jpg"},{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://reqres.in/img/faces/6-image.jpg"}];
+		 function fn2_getData2()
+		 {	 	
+				   var  str  = "<tr> <th> Customer ID </th> <th>Email-ID</th> <th>First Name</th> <th>Last Name </th> <th>Avatar</th></tr>";
+				   
+				   for( var item of arr2 )
+				   { 
+					   str  +=  "<tr>";	
+					   str  +=  "<td>" +   item.id + "</td>";	
+					   str  +=  "<td>" +   item.email + "</td>";	
+					   str  +=  "<td>" +   item.first_name + "</td>";	
+					   str  +=  "<td>" +   item.last_name + "</td>";	
+					   str  +=  "<td>" +   item.avatar + "</td>";	
+					   str  +=  "</tr>";	
+				   }
+				   
+				   var  tableObj2 =  document.getElementById("table2");	
+				   tableObj2.innerHTML = ""; 	
+				   tableObj2.innerHTML += str;
+		 }		  
+		</script>
+	</body>
+</html>

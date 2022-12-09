@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques4-Mapping</title>
+</head>
+<body>
+    <h3 style="text-align:center;">Performing the operations using Mapping Method</h3>
+    <hr/>
+    <script>
+        var citiesArray = ["Hyderabad" , "Mumbai" , "Bangalore" , "Gurgaon"];
+        var arrupper = citiesArray.map(uppercase);
+        function uppercase(str)
+        {
+            return str.toUpperCase();
+        }
+        console.log(arrupper);
+        document.writeln("Uppercase: " + arrupper +"<br/><br/><br/>");
+
+        var arrchar = citiesArray.map(function(item)
+        {
+            return item.substring(0,3);
+        });
+        console.log(arrchar);
+        document.writeln("First three elements: " + arrchar + "<br/><br/><br/>");
+
+        var arr1 = citiesArray.map(x => x.replaceAll('a','@'));
+      
+        console.log(arr1);
+        document.writeln("Replacing of a with @: " + arr1 + "<br/><br/><br/>");
+    </script>
+</body>
+</html>

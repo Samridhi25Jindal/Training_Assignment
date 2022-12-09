@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques-3-Functions</title>
+</head>
+<body>
+    <h3 style="text-align:center;">Functions</h3><hr/><br/>
+    <fieldset><br/>
+    Base Number: <input type="number" id="n1"/><br/><br/>
+    Exponent: <input type="number" id="n2"/><br/><br/>
+    <input type="button" value="Result" onclick="fn_calculate()"/>
+    <p id="p1"></p>
+    </fieldset><br/><br/>
+    <fieldset>
+    <p>Type a word</p>
+    <input type="text" id="t1"/><br/><br/>
+    <input type="button" value="Answer" onclick="fn_length()"/>
+    <p id="p2"></p>
+    </fieldset><br/><br/>
+    <script>
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+        var evenNumbers = [];
+        arr.forEach(num => 
+        {
+            if(num % 2 == 0)
+            {
+                evenNumbers.push(num);
+            }
+        });
+        console.log(evenNumbers);
+        document.writeln("Even Numbers in the array are:" + evenNumbers + "<br/><br/>")
+
+        function fn_calculate()
+        {
+            var no1 = document.getElementById("n1").value;
+            var no2 = document.getElementById("n2").value;
+            var paraObj = document.getElementById("p1");
+            var r = Math.pow(no1,no2);
+
+            paraObj.innerHTML = "Result: " +r;
+            paraObj.style.fontWeight = "bold";
+        }
+        function fn_length()
+        {
+            var txtObj = document.getElementById("t1").value;
+            var paraObj1 = document.getElementById("p2");
+
+            var string = txtObj.length;
+
+            paraObj1.innerHTML = "String Length:" +string;
+            paraObj1.style.fontWeight = "bold";
+
+        }
+    </script>
+</body>
+</html>

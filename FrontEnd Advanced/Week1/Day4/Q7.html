@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques-7 Arrays</title>
+</head>
+<body>
+    <h3>Employee Chart</h3>
+    <hr/>
+    <input type="button" value="Using Object Initializer" onclick="fn_1()"/>
+    <input type="button" value="Using Empty Object Method" onclick="fn_2()"/>
+    <input type="button" value="Using Constructor Function" onclick="fn_3()"/>
+    <hr/>
+    <table id="t1" border="2" width="500" cellpadding="10" cellspacing="0">
+        <tr>
+            <td>Employee Number</td>
+            <td>Employee Name</td>
+            <td>Job</td>
+            <td>Salary</td>
+            <td>Department Number</td>
+        </tr>
+
+    </table>
+    <script>
+        function fn_1()
+        {
+        var tableObj = document.getElementById("t1");
+        
+            var str = "<tr><th>Employee Number </th><th>Employee Name </th><th> Job </th><th> Salary </th><th> Department Number </th></tr>"
+            var s1 = {emp_no:120 , ename:"Smith" , job:"Analyst" , salary:50000 , dept_no:12};
+            tableObj.innerHTML += "<tr><td>"+ s1.emp_no + "</td><td>" + s1.ename + "</td><td>" + s1.job + "</td><td>" + s1.salary + "</td><td>" + s1.dept_no + "</td></tr>"; 
+        }
+        function fn_2()
+        {
+            var tableObj = document.getElementById("t1");
+
+            var s2 = {};
+            s2.emp_no = 121
+            s2.ename = "Scott"
+            s2.job = "Software Engineer"
+            s2.salary = 60000
+            s2.dept_no = 13
+            tableObj.innerHTML += "<tr><td>"+ s2.emp_no + "</td><td>" + s2.ename + "</td><td>" + s2.job + "</td><td>" + s2.salary + "</td><td>" + s2.dept_no + "</td></tr>"; 
+        }
+        function fn()
+        {
+            var tableObj = document.getElementById("t1");
+
+            this.emp_no = 122
+            this.ename = "Steve";
+            this.job = "Consultancy";
+            this.salary = 55000;
+            this.dept_no = 14;
+        }
+        function fn_3()
+        {
+            var tableObj = document.getElementById("t1");
+            var s3 = new fn();
+            tableObj.innerHTML += "<tr><td>"+ s3.emp_no + "</td><td>" + s3.ename + "</td><td>" + s3.job + "</td><td>" + s3.salary + "</td><td>" + s3.dept_no + "</td></tr>";
+        }
+        
+       
+    </script>
+</body>
+</html>
