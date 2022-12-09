@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques-3</title>
+</head>
+<body>
+    <h1 align="center">Details of Employee</h1>
+    <hr/>
+    <fieldset>
+        <legend style="font-size:larger;">Employee Details</legend><br/>
+        Employee Number:
+        <input type="number" id="empno" name="empno"/>
+        <br/><br/>
+        Employee Name:
+        <input type="text" id="ename" name="ename"/>
+        <br/><br/>
+        Job Description:
+        <input type="text" id="job" name="job"/>
+        <br/><br/>
+        Salary:
+        <input type="number" id="salary" name="salary"/>
+        <br/><br/>
+        <input type="button" value="Insert" onclick="fn()"/>
+    </fieldset><br/><br/>
+        <script>
+            var employee = document.getElementById("empno");
+            var empname = document.getElementById("ename");
+            var jobdesc = document.getElementById("job");
+            var sal = document.getElementById("salary");
+            var table = document.createElement("table");
+            table.setAttribute("id" , "tab");
+            document.body.appendChild(table);
+            table.setAttribute("border" , "2");
+            table.setAttribute("cellpadding" , "5");
+            table.setAttribute("cellspacing" , "0");
+            table.innerHTML="<tr><th>Employee No.</th><th>Employee Name</th><th>Job</th><th>Salary</th></tr>"
+            function fn()
+            {
+                var row = table.insertRow(-1);
+                var cell = row.insertCell(-1);
+                cell.innerHTML = employee.value;
+
+                var cell = row.insertCell(-1);
+                cell.innerHTML = empname.value;
+
+                var cell = row.insertCell(-1);
+                cell.innerHTML = jobdesc.value;
+
+                var cell = row.insertCell(-1);
+                cell.innerHTML = sal.value;
+            }
+        </script>
+</body>
+</html>
