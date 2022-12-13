@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques3</title>
+</head>
+<body>
+    <h2>Using Constructor</h2>
+    <script>
+        class Employee 
+        {
+            constructor(x , y , z)
+            {
+                this.empno = x;
+                this.ename = y;
+                this.job = z;
+            }
+            showDetails()
+            {
+                document.writeln("Employee No.:" + this.empno + "<br/>");
+                document.writeln("Employee Name:" + this.ename + "<br/>");
+                document.writeln("Job:" + this.job + "<br/>");
+
+            }
+        }
+        let e1 = new Employee(101, "Scott" , "Manager");
+        let e2 = new Employee(102, "Steve" , "Analyst");
+        e1.showDetails();
+        e2.showDetails();
+    </script>
+</body>
+</html>

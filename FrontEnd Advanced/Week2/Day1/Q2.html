@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques2</title>
+</head>
+<body>
+    <h2>Data Filtration using JavaScript</h2>
+    <hr/>
+    <br/>
+    Search Value: <input type="text" id="t1" name="t1"/>
+    <br/><br/>
+    <input type="button" value="Find By Empno" onclick="fn_empno()"/>
+    <input type="button" value="Find By Job" onclick="fn_job()"/>
+    <br/><br/>
+        <table id="tab" border="2" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Employee No.</th>
+            <th>Employee Name</th>
+            <th>Job</th>
+            <th>Salary</th>
+            <th>Department No.</th>
+        </tr>
+        </table>
+        <script>
+               
+        var arr = [{Empno:1025 , Ename:"Scott" , Job:"Manager" , Salary: 100000 , Deptno:12} , 
+                {Empno:1026 , Ename:"Steve" , Job:"Analyst" , Salary: 50000 , Deptno:13} , 
+                {Empno:1027 , Ename:"Smith" , Job:"Human Resource" , Salary: 90000 , Deptno:14} ,
+                {Empno:1028 , Ename:"Max" , Job:"Manager" , Salary: 100000 , Deptno:12} ,
+                {Empno:1029 , Ename:"Ruby" , Job:"Analyst" , Salary: 50000 , Deptno:13}
+        ];
+        function fn_empno()
+        {
+            var txtObj = document.getElementById("t1");
+            var tableObj = document.getElementById("tab");
+            var empdata = txtObj.value;
+            var newArr = arr.find(x=>x.Empno == empdata);
+            tableObj.innerHTML="<tr><th>Employee No.</th><th>Employee Name</th><th>Job</th><th>Salary</th><th>Department No.</th></tr>";
+
+            var row = tableObj.insertRow();
+
+            var cell = row.insertCell();
+            cell.innerHTML = newArr.Empno;
+
+            var cell1 = row.insertCell();
+            cell1.innerHTML = newArr.Ename;
+
+            var cell2 = row.insertCell();
+            cell2.innerHTML = newArr.Job;
+
+            var cell3 = row.insertCell();
+            cell3.innerHTML = newArr.Salary; 
+            
+            var cell4 = row.insertCell();
+            cell4.innerHTML = newArr.Deptno;
+           
+        }
+
+        function fn_job()
+        {
+            var txtObj = document.getElementById("t1");
+            var tableObj = document.getElementById("tab");
+            var data = txtObj.value;
+            tableObj.innerHTML=`<tr><th>Employee No.</th><th>Employee Name</th><th>Job</th><th>Salary</th><th>Department No.</th></tr>`;
+            var Arr = arr.filter(x=>x.Job == data);
+            for( var Arr1 of Arr)
+            {
+                var row = tableObj.insertRow();
+
+               var cell = row.insertCell();
+               cell.innerHTML = Arr1.Empno;
+
+               var cell1 = row.insertCell();
+               cell1.innerHTML = Arr1.Ename;
+
+               var cell2 = row.insertCell();
+               cell2.innerHTML = Arr1.Job;
+
+               var cell3 = row.insertCell();
+               cell3.innerHTML = Arr1.Salary; 
+
+               var cell4 = row.insertCell();
+               cell4.innerHTML = Arr1.Deptno;
+            }
+            }
+
+    </script>
+</body>
+</html>
