@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques-5</title>
+</head>
+<body>
+    <h2 align="center">Using fetch method</h2>
+    <hr/>
+    <button onclick="fn_showData()">Show Data</button><br><br>
+    <table id="tabb" border="2" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>ID</th>
+            <th>Email ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Avatar</th>
+        </tr>
+    </table>
+    <script>
+        async function fn_showData()
+        {
+        try{
+            var tabObj = document.getElementById("tabb");
+            let url = "https://reqres.in/api/users";
+            let response = await fetch(url);
+            let finalResult = await response.json();
+            displayData(finalResult.data);
+        }
+        catch(error)
+		{
+			tabObj.innerHTML = ""; 				   
+			tabObj.innerHTML  +=  "<tr><td style='color:red;'>There is an issue to fetch data from server. Please try after sometime.</td></tr>";
+					 
+		}
+        function displayData(dataArray)
+        {
+            tabObj.innerHTML  =  `<tr><th>ID</th><th>Email-ID</th><th>First Name</th><th>Last Name</th><th>Avatar</th></tr>`;
+            for(let item of dataArray)
+            {
+            tabObj.innerHTML += "<tr><td>" + item.id + "</td><td>" + item.email + "</td><td>" + item.first_name + "</td><td>" + item.last_name + "</td><td><img src='" + item.avatar + "'></td></tr>";
+            }
+        }
+    }
+    </script>
+</body>
+</html>

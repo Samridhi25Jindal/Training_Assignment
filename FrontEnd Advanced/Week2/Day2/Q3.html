@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques-3</title>
+</head>
+<body>
+    <h2 align="center">Asynchronous Programming in JavaScript</h2>
+    <hr/>
+    <button onclick="fn_showData()">Get Data</button>
+    <br/><br/>
+    <table id="tab" border="2" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+    </table>
+<script>
+     function fn_showData()
+     {
+        var tabObj = document.getElementById("tab");
+        let url="https://www.w3schools.com/angular/customers.php";
+
+        fetch(url).then((response)=>
+        {
+        response.json().then ( (resData)=>
+        {
+        tabObj.innerHTML  =  `<tr><th>Name</th><th>City</th><th>Country</th></tr>`;
+        for(let item of resData.records)
+        {
+        tabObj.innerHTML += "<tr><td>" + item.Name + "</td><td>" + item.City + "</td><td>" + item.Country + "</td></tr>";
+        }
+        });
+    });
+}
+</script>
+</body>
+</html>
