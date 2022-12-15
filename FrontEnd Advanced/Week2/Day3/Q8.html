@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques-8</title>
+</head>
+<body>
+    <h1>Dynamic Programming</h1>
+    <hr/>
+    <img src = "Image1.jpg" class="c1" border="2" width="70px" height="70px"/>
+    <img src = "Image2.jpg" class="c1" border="2" width="70px" height="70px"/>
+    <img src = "Image3.jpg" class="c1" border="2" width="70px" height="70px"/>
+    <img src = "Image4.jpg" class="c1" border="2" width="70px" height="70px"/>
+    <img src = "Image0.jpg" class="c1" border="2" width="70px" height="70px"/><br/><br/>
+
+    <img src = "Image1.jpg" id="bigImg" border="2" width="300px" height="300px"/>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            x = setInterval(function()
+            {
+               var y = Math.floor((Math.random() * 10));
+               var z = y%5;
+               $("#bigImg").attr("src", "Image"+z+".jpg");
+            },1000);
+            });
+    </script>
+</body>
+</html>
