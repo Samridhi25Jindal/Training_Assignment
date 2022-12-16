@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUES-4</title>
+    <style>
+        tr{
+            
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">jQuery Programming-DOM Traversing</h1>
+    <hr/><br/>
+    <table id="table1" border="2" width="40%" margin:auto align="center">
+        <tr>
+            <th>Product Name</th>
+            <th>Unit Price</th>
+            <th>Units In Stock</th>
+        </tr>
+        <tr>
+            <td>Printer</td>
+            <td>2500</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>HeadPhones</td>
+            <td>2000</td>
+            <td>20</td>
+        </tr>
+        <tr  >
+            <td>Smart TV</td>
+            <td>45000</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>60000</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Wifi Router</td>
+            <td>1800.00</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Printer</td>
+            <td>2500</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>HeadPhones</td>
+            <td>2000</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Smart TV</td>
+            <td>45000</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Laptop</td>
+            <td>60000</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>Wifi Router</td>
+            <td>1800.00</td>
+            <td>0</td>
+        </tr>  
+        <tr>
+            <td colspan="3">Total = 100</td>
+        </tr> 
+     </table> 
+     <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script> 
+     <script>
+        $(document).ready(function()
+        {
+            $("#table1 tr").each(function()
+            {
+                if($(this).children().eq(2).html()==0)
+                {
+                    $(this).css("background-color","pink");
+                }
+                else{
+                    $(this).css("background-color","lightgreen");
+                }
+            });
+            $("#table1 tr:first").css("background-color","lightblue");
+            $("#table1 tr:last").css("background-color","lightgray");
+
+        });
+     </script>
+</body>
+</html>
