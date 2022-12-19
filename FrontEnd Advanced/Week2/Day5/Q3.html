@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques3</title>.
+    <style>
+        p {
+            border: 2px solid blue;
+            padding: 10px;
+            text-align: justify;
+        }
+        .c1 {
+            font-weight: bold;
+        }
+        .c2 {
+            text-decoration: underline;
+        }
+        .c3 {
+            font-style: italic;
+        }
+        .btn {
+            background-color: blue;
+            border: 2px solid black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Applying style classes using jQuery</h1>
+    <hr/>
+    <input type="button" id="b1"  value="B"/>
+    <input type="button" id="b2"  value="U"/>
+    <input type="button" id="b3"  value="I"/>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa voluptate, sapiente voluptatibus voluptatem debitis a tempora suscipit! Accusamus, corrupti culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque quidem ad soluta repudiandae quod consequatur eius, sequi quasi enim veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsam sint mollitia! Necessitatibus accusamus earum beatae, voluptatum dolor iusto ducimus sequi sint corporis hic doloremque fuga libero. Est, molestiae sequi?</p>
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $("#b1").click(function()
+        {
+           $("p").toggleClass("c1");
+           $("#b1").toggleClass("btn");
+        });
+    
+        $("#b2").click(function()
+        {
+           $("p").toggleClass("c2");
+           $("#b2").toggleClass("btn");
+        });
+        $("#b3").click(function()
+        {
+           $("p").toggleClass("c3");
+           $("#b3").toggleClass("btn");
+        });
+    </script>
+</body>
+</html>
