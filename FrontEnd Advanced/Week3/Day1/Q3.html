@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques3</title>
+    <style>
+        .error {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Validations in jQuery</h1>
+    <hr/>
+    <fieldset>
+        <legend>Person Details</legend><br/>
+        Person Name: <input type="text" id="t1"/>
+        <br/><br/>
+        Person Contact Number: <input type="number" id="n1"/>
+        <br/><br/>
+        Vehicle Number: <input type="text" id="t2"/>
+        <br/><br/>
+        City Name: <input type="text" id="t3"/>
+        <br/><br/>
+    </fieldset>
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script> 
+    <script>
+           $(document).ready(function()
+           {
+               $("#t1").keyup(function()
+               {
+                   $("#sp1").remove();
+                   var pname = $("#t1").val();
+                   var pnameReg = /^[a-z A-Z]{1,10}$/;
+                    
+                   if(pnameReg.test(pname) == false && pname.length > 0)
+                   {
+                    $(this).after('<span id="sp1" class="error">*Please put Alphabets upto 10 characters only</span>');
+                   }
+               });
+               $("#n1").keyup(function()
+               {
+                   $("#sp2").remove();
+                   var pcontact = $("#n1").val();
+                   var pcontactReg = /^[0-9]{1,10}$/;
+                    
+                   if(pcontactReg.test(pcontact) == false && pcontact.length > 0 )
+                   {
+                    $(this).after('<span id="sp2" class="error">*Please put 10 Digits only</span>');
+                   }
+               });
+               $("#t2").keyup(function()
+               {
+                   $("#sp3").remove();
+                   var vehicle = $("#t2").val();
+                   var vehicleReg = /^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$/;
+                    
+                   if(vehicleReg.test(vehicle) == false && vehicle.length > 0 )
+                   {
+                    $(this).after('<span id="sp3" class="error" >*Vehicle Number should be in AA11AA1111 only</span>');
+                   }
+               });
+               $("#t3").keyup(function()
+               {
+                   $("#sp4").remove();
+                   var city = $("#t3").val();
+                   var cityReg = /^[A-Z]{1,}$/;
+                    
+                   if(cityReg.test(city) == false && city.length > 0 )
+                   {
+                    $(this).after('<span id="sp4" class="error" >*Only Capital Letters</span>');
+                   }
+               });
+              
+           });
+    </script>
+</body>
+</html>
+
+
+
