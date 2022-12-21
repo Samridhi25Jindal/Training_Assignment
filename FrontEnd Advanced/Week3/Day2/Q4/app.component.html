@@ -1,0 +1,12 @@
+
+  <h1 align="center">Displaying Collection of Objects in Angular</h1>
+  <hr/>
+  <div *ngFor="let item  of  empsArray" style="margin:10px;">
+    <div style="font-weight:bold; color:green; padding:10px; float:left; border-radius:20px; border:2px solid black; width:27%; margin:10px;" >
+      Employee Number: {{item.empno}} <br/>
+      Employee Name: {{item.ename}} <br/>
+      <span style="color:blue;">Job: {{item.job}} <br/></span>
+      <span style="color:red;">Salary: {{item.sal}} <br/></span>
+      Department Number: {{item.deptno}}
+    </div>
+  </div>
