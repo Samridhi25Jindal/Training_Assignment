@@ -1,0 +1,40 @@
+#main {
+    background-color: lightgrey;
+    padding: 20px;
+    width:50%;
+}
+#first {
+    padding:10px;
+    font-weight:bold;
+    font-size: 10px;
+}
+.bi-display-fill {
+    padding-right: 10px;
+}
+.foot {
+    background-color: blue;
+    padding:20px;
+    font-weight: bold;
+    color:white;
+    font-size: 17px;
+display:flex;
+flex-wrap:wrap;}
+a {
+    font-size: 20px;
+    color:rgb(32, 125, 202);
+}
+.foot2 {
+    width:30%;
+    text-align:right;
+}
+i{
+    margin: 2px;
+}
+.mid{
+    display:inline-block;
+    margin:10px;
+}
+.foot1{
+    width:65%;
+    
+}
