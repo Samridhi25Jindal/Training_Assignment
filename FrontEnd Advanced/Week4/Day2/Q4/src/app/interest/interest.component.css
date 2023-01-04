@@ -1,0 +1,25 @@
+fieldset {
+    background-color: royalblue;
+    color: white;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+#simple {
+    text-align: center;
+    color: royalblue;
+    margin: auto;
+    width: 100%;
+    padding:10px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+span {
+    font-size: 1.3rem;
+}
+select {
+    font-size: 1.3rem;
+}
+#no1 {
+    font-size: 1.3rem;
+}

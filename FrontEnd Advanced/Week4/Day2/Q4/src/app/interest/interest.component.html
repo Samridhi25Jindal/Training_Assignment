@@ -1,0 +1,23 @@
+<fieldset>
+<h1 align="center">Simple Interest Calculator</h1>
+<span>Principal Amount:</span> <input type="number" id="no1" [(ngModel)]="principal"/>
+<br/><br/>
+<span>Rate % Per Year:</span> <input type="number" id="no1" [(ngModel)]="rate"/>
+<br/><br/>
+<span>Time Period(In Years):</span>
+<select [(ngModel)]="time">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+</select><br/><br/>
+<input type="button" id="simple" value="Calculate Interest" (click)="getValue()"/>
+<p [hidden]="x">Interest: {{result}}</p>
+<p [hidden]="x">Amount: {{amount}}</p>
+</fieldset>
