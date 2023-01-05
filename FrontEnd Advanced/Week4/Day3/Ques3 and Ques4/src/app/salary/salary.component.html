@@ -1,0 +1,29 @@
+
+<h1 align="center">Employee Data</h1>
+<hr/>
+<table border="2" cellpadding="5" cellspacing="0">
+    <tr style="background-color:aquamarine">
+        <th>S.No.</th>
+        <th>Employee Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr style="background-color:pink" *ngFor="let item of empsArray" >
+        <td>{{item.sno}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.salary}}</td>
+    </tr>
+</table>
+
+<table border="2" cellpadding="5" cellspacing="0">
+    <tr style="background-color:aquamarine">
+        <th>S.No.</th>
+        <th>Employee Name</th>
+        <th>Salary</th>
+    </tr>
+    <tr style="background-color:pink" *ngFor="let item of empsArray | salpipe:10000:50000" >
+        <td>{{item.sno}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.salary}}</td>
+    </tr>
+</table>
+

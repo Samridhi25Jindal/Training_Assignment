@@ -1,0 +1,14 @@
+table {
+    float:left;
+    margin:40px;
+    text-align: center;
+}
+div {
+    background-color: black;
+}
+th {
+    background-color: pink;
+}
+td {
+    background-color: rgb(57,156,57);
+}
