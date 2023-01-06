@@ -1,0 +1,60 @@
+{
+  "details": [
+    {
+      "empno": 1,
+      "ename": "Samridhi",
+      "job": "Analyst",
+      "salary": 50000,
+      "deptno": 10
+    },
+    {
+      "empno": 2,
+      "ename": "Kritika",
+      "job": "Human Resource",
+      "salary": 45000,
+      "deptno": 20
+    },
+    {
+      "empno": 3,
+      "ename": "Hemant",
+      "job": "Analyst",
+      "salary": 50000,
+      "deptno": 10
+    },
+    {
+      "empno": 4,
+      "ename": "Sahil",
+      "job": "Human Resource",
+      "salary": 45000,
+      "deptno": 20
+    },
+    {
+      "empno": 5,
+      "ename": "Scott",
+      "job": "Manager",
+      "salary": 70000,
+      "deptno": 30
+    },
+    {
+      "empno": 6,
+      "ename": "Smith",
+      "job": "Manager",
+      "salary": 70000,
+      "deptno": 30
+    },
+    {
+      "ename": "",
+      "job": "",
+      "sal": 0,
+      "deptno": 0,
+      "empno": 7
+    },
+    {
+      "ename": "",
+      "job": "",
+      "sal": 0,
+      "deptno": 0,
+      "empno": 8
+    }
+  ]
+}
