@@ -1,0 +1,7 @@
+1. What is Single Responsibilty Principle?
+The Single Responsibility Principle is the first principle of SOLID principles. It is the fundamental principle of object-oriented programming that determines how we should design classes.
+
+The Single Responsibility Principle states that:
+Each software module should have one and only one reason to change.
+
+In other words, a class should have only one responsibility and therefore it should have only one reason to change its code. If a class has more than one responsibility, then there will be more than one reason to change the class (code).
