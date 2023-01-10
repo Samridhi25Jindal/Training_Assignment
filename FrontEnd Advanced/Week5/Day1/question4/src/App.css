@@ -1,0 +1,30 @@
+* {
+  background-color: lightpink;
+}
+img {
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+  border:2px solid whitesmoke;
+}
+#d1 {
+  border:2px solid black;
+  text-align: center;
+  border-radius: 25px;
+  margin:20px;
+  float: left;
+  width:15%;
+  line-height: 20px;
+  padding:20px;
+  background-color: white;
+}
+span {
+  font-size: 15px;
+}
+button {
+  padding:10px;
+}
+#first {
+  font-size:22px;
+  line-height: 5px;
+}
