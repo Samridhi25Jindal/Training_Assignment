@@ -1,0 +1,49 @@
+{
+  "cars": [
+    {
+      "sno": 1,
+      "name": "Mercedes-Benz GLA",
+      "image": "https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/GLA/7269/1621948227508/front-left-side-47.jpg?impolicy=resize&imwidth=480",
+      "price": "5500000",
+      "fuel": "petrol",
+      "driveType": "automatic",
+      "mileage": "23.0kmpl"
+    },
+    {
+      "sno": 2,
+      "image": "https://i0.wp.com/gaywheels.com/wordpress/wp-content/uploads/2015/02/2015-rear.jpg?ssl=1",
+      "name": "Mercedes-Benz C-Class",
+      "price": "6300000",
+      "fuel": "diesel",
+      "driveType": "automatic",
+      "mileage": "23.0kmpl"
+    },
+    {
+      "sno": 3,
+      "image": "https://cdn.motor1.com/images/mgl/9LYqb/s1/2021-mercedes-benz-s-class-rear.jpg",
+      "name": "Mercedes-Benz S-Class",
+      "price": "17400000",
+      "fuel": "petrol",
+      "driveType": "manual",
+      "mileage": "18.7kmpl"
+    },
+    {
+      "sno": 4,
+      "image": "https://th.bing.com/th/id/OIP.Ma8P5hq4tvVcQQj8pXdhtwHaEc?pid=ImgDet&rs=1",
+      "name": "Mercedes-Benz GLE",
+      "price": "10500000",
+      "fuel": "diesel",
+      "driveType": "manual",
+      "mileage": "9.7kmpl"
+    },
+    {
+      "sno": 5,
+      "image": "https://th.bing.com/th/id/R.985c3e316cc11339b214021e7e15644c?rik=aTLywGVgk59SvA&riu=http%3a%2f%2fs3.caradvice.com.au%2fwp-content%2fuploads%2f2017%2f03%2fMercedes-Benz-E-Class-Coupe-8.jpg&ehk=BbH9O2xruYl7Xtd6TTbMucCqwJB%2fMnT0EnpoesPZpcI%3d&risl=&pid=ImgRaw&r=0",
+      "name": "Mercedes-Benz E-Class",
+      "price": "8750000",
+      "fuel": "petrol",
+      "driveType": "automatic",
+      "mileage": "16.1kmpl"
+    }
+  ]
+}
